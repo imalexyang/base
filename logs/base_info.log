@@ -1,0 +1,52 @@
+[base_info][INFO] [2015-07-26 21:16:14] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+  [base_info][INFO] [2015-07-26 21:16:15] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Sun Jul 26 21:16:15 CST 2015]; root of context hierarchy
+  [base_info][INFO] [2015-07-26 21:16:15] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring.xml]
+  [base_info][INFO] [2015-07-26 21:16:15] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+  [base_info][INFO] [2015-07-26 21:16:15] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [properties/jdbc.properties]
+  [base_info][INFO] [2015-07-26 21:16:15] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-07-26 21:16:16] com.alibaba.druid.pool.DruidDataSource.init(669) | {dataSource-1} inited
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 2089 ms
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.servlet.FrameworkServlet.initServletBean(484) | FrameworkServlet 'spring-mvc': initialization started
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Sun Jul 26 21:16:17 CST 2015]; parent: Root WebApplicationContext
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mvc.xml]
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo] onto handler 'TUserController'
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo.*] onto handler 'TUserController'
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo/] onto handler 'TUserController'
+  [base_info][INFO] [2015-07-26 21:16:17] org.springframework.web.servlet.FrameworkServlet.initServletBean(503) | FrameworkServlet 'spring-mvc': initialization completed in 788 ms
+  [base_info][INFO] [2015-07-26 21:16:22] cn.bishiti.base.controller.TUserController.ShowUserInfo(26) | {"name":"admin","nick":"管理员","password":"123456","id":1}
+  [base_info][INFO] [2015-08-09 08:17:56] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+  [base_info][INFO] [2015-08-09 08:17:56] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Sun Aug 09 08:17:56 CST 2015]; root of context hierarchy
+  [base_info][INFO] [2015-08-09 08:17:56] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring.xml]
+  [base_info][INFO] [2015-08-09 08:17:57] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+  [base_info][INFO] [2015-08-09 08:17:57] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [properties/jdbc.properties]
+  [base_info][INFO] [2015-08-09 08:17:57] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-08-09 08:17:57] com.alibaba.druid.pool.DruidDataSource.init(669) | {dataSource-1} inited
+  [base_info][INFO] [2015-08-09 08:17:58] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 1920 ms
+  [base_info][INFO] [2015-08-09 08:17:58] org.springframework.web.servlet.FrameworkServlet.initServletBean(484) | FrameworkServlet 'spring-mvc': initialization started
+  [base_info][INFO] [2015-08-09 08:17:58] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Sun Aug 09 08:17:58 CST 2015]; parent: Root WebApplicationContext
+  [base_info][INFO] [2015-08-09 08:17:58] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mvc.xml]
+  [base_info][INFO] [2015-08-09 08:17:58] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-08-09 08:17:59] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:17:59] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo.*] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:17:59] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo/] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:17:59] org.springframework.web.servlet.FrameworkServlet.initServletBean(503) | FrameworkServlet 'spring-mvc': initialization completed in 701 ms
+  [base_info][INFO] [2015-08-09 08:18:06] cn.bishiti.base.controller.TUserController.ShowUserInfo(33) | {"name":"admin","nick":"管理员","password":"123456","id":1}
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Sun Aug 09 08:42:05 CST 2015]; root of context hierarchy
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring.xml]
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [properties/jdbc.properties]
+  [base_info][INFO] [2015-08-09 08:42:05] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-08-09 08:42:05] com.alibaba.druid.pool.DruidDataSource.init(669) | {dataSource-1} inited
+  [base_info][INFO] [2015-08-09 08:42:06] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 1700 ms
+  [base_info][INFO] [2015-08-09 08:42:06] org.springframework.web.servlet.FrameworkServlet.initServletBean(484) | FrameworkServlet 'spring-mvc': initialization started
+  [base_info][INFO] [2015-08-09 08:42:06] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Sun Aug 09 08:42:06 CST 2015]; parent: Root WebApplicationContext
+  [base_info][INFO] [2015-08-09 08:42:06] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring/spring-mvc.xml]
+  [base_info][INFO] [2015-08-09 08:42:06] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(153) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  [base_info][INFO] [2015-08-09 08:42:07] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:42:07] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo.*] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:42:07] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(314) | Mapped URL path [/user/userInfo/] onto handler 'TUserController'
+  [base_info][INFO] [2015-08-09 08:42:07] org.springframework.web.servlet.FrameworkServlet.initServletBean(503) | FrameworkServlet 'spring-mvc': initialization completed in 633 ms
+  [base_info][INFO] [2015-08-09 08:42:12] cn.bishiti.base.controller.TUserController.ShowUserInfo(33) | {"name":"admin","nick":"管理员","password":"123456","id":1}
+  

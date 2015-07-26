@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <properties resource="properties/jdbc.properties"/>
+  
+  <classPathEntry location="${classPath}" />
+  
+  <context id="base" targetRuntime="MyBatis3" defaultModelType="conditional">
+  	<!-- 是否去除自动生成的注释 true：是 ： false:否 -->  
+	<commentGenerator>
+		<property name="suppressAllComments" value="true" />
+	</commentGenerator>
+    <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="bishiti" password="${jdbc.password}" />
+    
+     <!--  默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer   
+	         true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal   
+	     --> 
+    <javaTypeResolver >  
+	     <property name="forceBigDecimals" value="false" />  
+    </javaTypeResolver>
+    
+    <javaModelGenerator targetPackage="cn.bishiti.base.model" targetProject="base" >
+    	<!-- 是否在当前路径下新加一层schema,eg：false路径cn.bishiti.base.model， true:cn.bishiti.base.model.[schemaName] -->  
+         <property name="enableSubPackages" value="true"/>  
+         <!-- 是否针对string类型的字段在set的时候进行trim调用 -->  
+         <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+           
+    <sqlMapGenerator targetPackage="mybatis.mappers" targetProject="base/src/main/resources">
+    	<property name="enableSubPackages" value="false" />
+    </sqlMapGenerator>
+    
+    <javaClientGenerator targetPackage="cn.bishiti.base.dao" targetProject="base" type="XMLMAPPER">
+    	<property name="enableSubPackages" value="true" />    	
+    </javaClientGenerator>
+    
+    <table schema="base" tableName="t_user" 
+    		enableInsert="true" enableSelectByPrimaryKey="true"
+			enableUpdateByPrimaryKey="true" enableDeleteByPrimaryKey="true"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="true"  >
+      <!-- <columnOverride column="name" property="userName" /> -->
+      
+    </table>
+  </context>
+</generatorConfiguration>
