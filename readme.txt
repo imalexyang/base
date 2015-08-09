@@ -1,5 +1,7 @@
 readme
 
+0.Maven,Spring MVC,Mybatis,Java project
+
 1.利用MyBatis Generator自动创建代码
 2.数据库名称：base
 表：t_user.sql
