@@ -9,8 +9,22 @@
         http://www.springframework.org/schema/mvc   
         http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">  
   
-   <!-- 自动扫描controller包下的所有类，如果@Controller注入为bean -->  
+    <!-- 自动扫描controller包下的所有类，如果@Controller注入为bean -->  
     <context:component-scan base-package="cn.bishiti.base.controller" />  
+  
+  	<!-- 默认的注解映射的支持 -->
+	<mvc:annotation-driven>  
+	<mvc:message-converters register-defaults="true">  
+		<bean class="org.springframework.http.converter.StringHttpMessageConverter">  
+			<property name="supportedMediaTypes">    
+				<list>    
+					<value>text/plain;charset=UTF-8</value>    
+					<value>text/html;charset=UTF-8</value>    
+				</list>
+			</property>
+		</bean>
+	</mvc:message-converters>
+    </mvc:annotation-driven>
   
     <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->  
     <bean id="mappingJacksonHttpMessageConverter"  
@@ -32,6 +46,9 @@
             </list>  
         </property>  
     </bean>  
+  
+    <!-- 不拦截资源文件 -->
+  	<mvc:resources mapping="/resource/**" location="/resource/" order="0"/>
   
     <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->  
     <bean  
