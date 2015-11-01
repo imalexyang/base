@@ -1,5 +1,8 @@
 package cn.bishiti.base.service;
 
+import java.util.List;
+import java.util.Map;
+
 import cn.bishiti.base.model.TUser;
 
 public interface TUserService {
@@ -10,6 +13,8 @@ public interface TUserService {
     int insertSelective(TUser record);
 
     TUser selectByPrimaryKey(Integer id);
+    
+    List<TUser> selectByParam(Map<String,Object> map);
 
     int updateByPrimaryKeySelective(TUser record);
 

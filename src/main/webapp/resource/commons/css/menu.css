@@ -1,0 +1,38 @@
+/********后台管理，菜单样式*********/
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; font-family:"微软雅黑"}
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input:focus, textarea:focus, select:focus { outline: none; }
+select, input { vertical-align: middle; }
+legend { color: #000; }
+.clean:before, .clean:after, .clearfix:before, .clearfix:after { content: ""; display: table; }
+.clean:after, .clearfix:after { clear: both; }
+.clean, .clearfix { zoom: 1; }
+.clear { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.break { word-wrap: break-word; width: inherit; }
+.linkhidden { text-indent: -9999em; overflow: hidden; }
+.hidden { display: none; }
+a{ text-decoration:none;}
+/*reset*/
+
+/*主要样式*/
+.subNavBox{width:200px;border:solid 1px #e5e3da;}
+.subNav{border-bottom:solid 1px #e5e3da;cursor:pointer;font-weight:bold;font-size:14px;color:#999;line-height:28px;padding-left:10px;background:url(../images/jiantou1.jpg) no-repeat;background-position:95% 50%}
+.subNav:hover{color:#277fc2;}
+.currentDd{color:#277fc2}
+.currentDt{background-image:url(../images/jiantou.jpg);}
+.navContent{display: none;border-bottom:solid 1px #e5e3da;}
+.navContent li a{display:block;width:200px;heighr:28px;text-align:center;font-size:14px;line-height:28px;color:#333}
+.navContent li a:hover{color:#fff;background-color:#277fc2}
+.currentA{color:#fff !important;;background-color:#277fc2 !important;} 

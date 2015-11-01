@@ -6,18 +6,65 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="../resource/commons/jeasyui/themes/default/easyui.css">
 		<link rel="stylesheet" type="text/css" href="../resource/commons/jeasyui/themes/icon.css">
+		<link rel="stylesheet" type="text/css" href="../resource/commons/css/menu.css">
 		<script type="text/javascript" src="../resource/commons/jeasyui/jquery.min.js"></script>
 		<script type="text/javascript" src="../resource/commons/jeasyui/jquery.easyui.min.js"></script>
 		<title>后台管理系统</title>
 	</head>
 	<body class="easyui-layout">		
-		<div data-options="region:'north'" style="height:100px">
-			<h3>后台管理系统</h3>
+		<div data-options="region:'north'" style="height:100px;padding-left: 50px;">
+			<br/>
+			<br/>
+			<br/>
+			<h1>后台管理系统</h1>
 		</div>
-		<div id="p" data-options="region:'west'" title="菜单" style="width:20%;padding:10px">
-			<p>width: 30%</p>
+		<div id="p" data-options="region:'west'" title="菜单" style="width:205px;">
+			<!-- 代码 开始 -->
+			<div class="subNavBox">
+				<div class="subNav currentDd currentDt">权限管理中心</div>
+				<ul class="navContent " style="display:block">
+						<li><a href="#">组织机构</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#">菜单管理</a></li>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">权限管理</a></li>						
+				</ul>
+				<!-- <div class="subNav">关于我们</div>
+				<ul class="navContent">
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">新闻管理</a></li>
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">新闻管理</a></li>
+				</ul>
+				<div class="subNav">业务系统</div>
+				<ul class="navContent">
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">新闻管理</a></li>
+				</ul>
+				<div class="subNav">招商加盟</div>
+				<ul class="navContent">
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">新闻管理</a></li>
+						<li><a href="#">添加新闻</a></li>
+						<li><a href="#">新闻管理</a></li>
+				</ul> -->
+			</div>
+			<!-- 代码 结束 -->
 		</div>
 		<div data-options="region:'center'" title="内容">
-		</div>		
+			<table class="easyui-datagrid" title="Basic DataGrid" style="width:700px;height:250px"
+            data-options="singleSelect:true,collapsible:true,url:'/base/user/userList',method:'get'">
+		        <thead>
+		            <tr>
+		                <th data-options="field:'id',width:60">ID</th>
+		                <th data-options="field:'name',width:100">name</th>
+		                <th data-options="field:'nick',width:80,align:'right'">Nick</th>		               
+		            </tr>
+		        </thead>
+		    </table>
+		</div>
 	</body>
+	<script type="text/javascript" src="../resource/commons/js/admin/index.js"></script>
 </html>

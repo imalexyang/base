@@ -1,5 +1,8 @@
 package cn.bishiti.base.service.Impl;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +36,11 @@ public class TUserServiceImpl implements TUserService{
 		return tUserMapper.selectByPrimaryKey(id);
 	}
 
+	public List<TUser> selectByParam(Map<String,Object> map) {
+		// TODO Auto-generated method stub
+		return tUserMapper.selectByParam(map);
+	}
+	
 	public int updateByPrimaryKeySelective(TUser record) {
 		// TODO Auto-generated method stub
 		return tUserMapper.updateByPrimaryKeySelective(record);

@@ -1,5 +1,8 @@
 package cn.bishiti.base.dao;
 
+import java.util.List;
+import java.util.Map;
+
 import cn.bishiti.base.model.TUser;
 
 public interface TUserMapper {
@@ -10,6 +13,8 @@ public interface TUserMapper {
     int insertSelective(TUser record);
 
     TUser selectByPrimaryKey(Integer id);
+    
+    List<TUser> selectByParam(Map<String,Object> map);
 
     int updateByPrimaryKeySelective(TUser record);
 
