@@ -24,7 +24,8 @@
 				<div class="subNav currentDd currentDt">权限管理中心</div>
 				<ul class="navContent " style="display:block">
 						<li><a href="#">组织机构</a></li>
-						<li><a href="#">用户管理</a></li>
+						<li><a href="/base/user/list" target="iframe" class="currentA">用户管理-列表</a></li>
+						<li><a href="/base/user/update?id=1" target="iframe">用户管理-编辑</a></li>
 						<li><a href="#">菜单管理</a></li>
 						<li><a href="#">角色管理</a></li>
 						<li><a href="#">权限管理</a></li>						
@@ -54,16 +55,7 @@
 			<!-- 代码 结束 -->
 		</div>
 		<div data-options="region:'center'" title="内容">
-			<table class="easyui-datagrid" title="Basic DataGrid" style="width:700px;height:250px"
-            data-options="singleSelect:true,collapsible:true,url:'/base/user/userList',method:'get'">
-		        <thead>
-		            <tr>
-		                <th data-options="field:'id',width:60">ID</th>
-		                <th data-options="field:'name',width:100">name</th>
-		                <th data-options="field:'nick',width:80,align:'right'">Nick</th>		               
-		            </tr>
-		        </thead>
-		    </table>
+			<iframe name="iframe" id="iframe" width="99%" height="98%" src="/base/user/list">您的浏览器不支持iframe，请按网页底部联系方式反馈给我们，谢谢。</iframe>
 		</div>
 	</body>
 	<script type="text/javascript" src="../resource/commons/js/admin/index.js"></script>

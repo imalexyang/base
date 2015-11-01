@@ -32,12 +32,17 @@ public class TUserController {
 	@Autowired
 	private TUserService tUserService;
 	
-	@RequestMapping("/userInfo")
+	@RequestMapping("/list")
+	public String list(){		
+		return "/user/list";
+	}
+	
+	@RequestMapping("/update")
 	public String showUserInfo(Model model,Integer id){
 		TUser tUser=tUserService.selectByPrimaryKey(id);
 		LOGGER.info(JSON.toJSON(tUser));
 		model.addAttribute("user", tUser);
-		return "userInfo";
+		return "/user/update";
 	}
 	
 	@RequestMapping("/userList")
