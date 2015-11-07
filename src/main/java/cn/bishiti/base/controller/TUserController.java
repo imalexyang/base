@@ -33,24 +33,32 @@ public class TUserController {
 	private TUserService tUserService;
 	
 	@RequestMapping("/list")
-	public String list(){		
+	public String listPage(){		
 		return "/user/list";
-	}
-	
-	@RequestMapping("/update")
-	public String showUserInfo(Model model,Integer id){
-		TUser tUser=tUserService.selectByPrimaryKey(id);
-		LOGGER.info(JSON.toJSON(tUser));
-		model.addAttribute("user", tUser);
-		return "/user/update";
 	}
 	
 	@RequestMapping("/userList")
 	@ResponseBody
-	public Object userList(){
+	public Object list(){
 		Map<String,Object> map=new HashMap<String,Object>();
 		List<TUser> tusers=tUserService.selectByParam(map);
 		return tusers;
 	}
 	
+	@RequestMapping("/insert")
+	@ResponseBody
+	public Object insert(TUser user){
+		tUserService.insert(user);
+		Map<String,Object> map=new HashMap<String,Object>();
+		map.put("status", "新建成功");
+		return map;
+	}
+	
+	@RequestMapping("/update")
+	public String update(Model model,Integer id){
+		TUser tUser=tUserService.selectByPrimaryKey(id);
+		LOGGER.info(JSON.toJSON(tUser));
+		model.addAttribute("user", tUser);
+		return "/user/update";
+	}
 }

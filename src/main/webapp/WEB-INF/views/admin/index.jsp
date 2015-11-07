@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../resource/commons/css/menu.css">
 		<script type="text/javascript" src="../resource/commons/jeasyui/jquery.min.js"></script>
 		<script type="text/javascript" src="../resource/commons/jeasyui/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../resource/commons/js/commons.js"></script>
 		<title>后台管理系统</title>
 	</head>
 	<body class="easyui-layout">		
@@ -22,10 +23,9 @@
 			<!-- 代码 开始 -->
 			<div class="subNavBox">
 				<div class="subNav currentDd currentDt">权限管理中心</div>
-				<ul class="navContent " style="display:block">
+				<ul class="navContent" style="display:block">
 						<li><a href="#">组织机构</a></li>
-						<li><a href="/base/user/list" target="iframe" class="currentA">用户管理-列表</a></li>
-						<li><a href="/base/user/update?id=1" target="iframe">用户管理-编辑</a></li>
+						<li><a href="/base/user/list" target="iframe" class="currentA">用户管理</a></li>
 						<li><a href="#">菜单管理</a></li>
 						<li><a href="#">角色管理</a></li>
 						<li><a href="#">权限管理</a></li>						

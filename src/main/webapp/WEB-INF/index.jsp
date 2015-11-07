@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h2>主页</h2>
+	<a href="admin/index">前往列表页》》</a>
 </body>
 </html>
