@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import cn.bishiti.base.commons.page.Page;
 import cn.bishiti.base.dao.TUserMapper;
 import cn.bishiti.base.model.TUser;
 import cn.bishiti.base.service.TUserService;
@@ -15,6 +16,10 @@ public class TUserServiceImpl implements TUserService{
 
 	@Autowired
 	private TUserMapper tUserMapper;
+	
+	public List<TUser> selectPageByParam(Map<String,Object> map,Page page){
+		return tUserMapper.selectByParam(map);
+	}
 	
 	public int deleteByPrimaryKey(Integer id) {
 		// TODO Auto-generated method stub

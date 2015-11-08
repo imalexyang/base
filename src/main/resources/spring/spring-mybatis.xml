@@ -54,6 +54,13 @@
         <property name="dataSource" ref="dataSource" />  
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->  
         <property name="mapperLocations" value="classpath:mybatis/mappers/*.xml" />  
+        
+        <!-- 分页 -->
+        <property name="plugins">
+	    	<array>	      	
+	      	<bean class="cn.bishiti.base.commons.page.PageInterceptor"/>
+	    	</array>
+	  	</property>
     </bean>  
   
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
@@ -90,5 +97,5 @@
         <aop:advisor pointcut-ref="transactionPointcut"  
             advice-ref="transactionAdvice" />  
     </aop:config>  
-  
+ 
 </beans>  

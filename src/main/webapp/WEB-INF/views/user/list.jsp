@@ -14,7 +14,8 @@
 	</head>
 	<body>	
 		<table id="dg" class="easyui-datagrid" title="Basic DataGrid" style="width:100%;height:100%;"
-            data-options="singleSelect:true,collapsible:true,url:'/base/user/userList',method:'get'" toolbar="#toolbar">
+            data-options="rownumbers:true,singleSelect:true,autoRowHeight:true,pagination:true,
+				pageSize:10,url:'/base/user/userList',method:'get',toolbar:'#toolbar'">
 	        <thead>
 	            <tr>
 	                <th data-options="field:'id',width:100">ID</th>

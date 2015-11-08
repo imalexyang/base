@@ -29,7 +29,6 @@ function save(){
 		},
 		success: function(result){
 			var result = eval('('+result+')');
-			alert(result.status);
 			if (result.errorMsg){
 				$.messager.show({
 					title: 'Error',

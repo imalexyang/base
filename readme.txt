@@ -2,7 +2,7 @@ readme
 
 这是一个Java Web项目基本框架，
 现在已经完成后台管理管理界面布局，
-列表展示，数据增改删等功能。20151108
+列表展示，数据增改删，分页等功能。20151108
 
 0.Maven,Spring MVC,Mybatis,Java project,EasyUI 1.4
 1.利用MyBatis Generator自动创建代码
