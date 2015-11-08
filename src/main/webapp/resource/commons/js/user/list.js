@@ -12,6 +12,15 @@ function insert(){
 	url = ctx+'/user/insert';
 }
 
+function edit(){
+	var row = $('#dg').datagrid('getSelected');
+	if (row){
+		$('#dlg').dialog('open').dialog('setTitle','Edit User');
+		$('#fm').form('load',row);
+		url = 'update?id='+row.id;
+	}
+}
+
 function save(){
 	$('#fm').form('submit',{
 		url: url,
@@ -32,4 +41,24 @@ function save(){
 			}
 		}
 	});
+}
+
+function del(){
+	var row = $('#dg').datagrid('getSelected');
+	if (row){
+		$.messager.confirm('Confirm','Are you sure you want to destroy this user?',function(r){
+			if (r){
+				$.post('del',{id:row.id},function(result){
+					if (result.status!=null){
+						$('#dg').datagrid('reload');	// reload the user data
+					} else {
+						$.messager.show({	// show error message
+							title: 'Error',
+							msg: result.errorMsg
+						});
+					}
+				},'json');
+			}
+		});
+	}
 }

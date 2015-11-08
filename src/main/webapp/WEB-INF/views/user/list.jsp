@@ -25,8 +25,8 @@
 	    </table>
 	    <div id="toolbar">
 			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'" onclick="insert()">添加</a>
-			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-save'" onclick="delete()">保存</a>
-			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" onclick="edit()">删除</a>			
+			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit'" onclick="edit()">编辑</a>
+			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" onclick="del()">删除</a>			
 		</div>
 		
 		<div id="dlg" class="easyui-dialog" data-options="iconCls:'icon-save',resizable:true,modal:true" style="width:400px;height:280px;padding:10px 20px"	closed="true" buttons="#dlg-buttons">

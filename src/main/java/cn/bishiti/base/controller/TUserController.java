@@ -49,16 +49,29 @@ public class TUserController {
 	@ResponseBody
 	public Object insert(TUser user){
 		tUserService.insert(user);
+		LOGGER.info(JSON.toJSON("添加用户："+user));
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("status", "新建成功");
 		return map;
 	}
 	
 	@RequestMapping("/update")
-	public String update(Model model,Integer id){
-		TUser tUser=tUserService.selectByPrimaryKey(id);
-		LOGGER.info(JSON.toJSON(tUser));
-		model.addAttribute("user", tUser);
-		return "/user/update";
+	@ResponseBody
+	public Object update(Model model,TUser user){
+		tUserService.updateByPrimaryKeySelective(user);
+		LOGGER.info(JSON.toJSON("更新用户："+user));
+		Map<String,Object> map=new HashMap<String,Object>();
+		map.put("status", "修改成功");
+		return map;
+	}
+	
+	@RequestMapping("/del")
+	@ResponseBody
+	public Object del(Model model,Integer id){
+		tUserService.deleteByPrimaryKey(id);
+		LOGGER.info(JSON.toJSON("删除用户:"+id));
+		Map<String,Object> map=new HashMap<String,Object>();
+		map.put("status", "删除成功");
+		return map;
 	}
 }
