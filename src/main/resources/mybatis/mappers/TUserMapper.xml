@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="cn.bishiti.base.dao.TUserMapper" >
-	<!-- 这两个一个是缓存，一个是缓存日志 -->
-	<!-- <cache type="org.mybatis.caches.memcached.MemcachedCache" />
-	<cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" /> -->
+	<!-- 这两个一个是缓存，一个是缓存日志 ，注释掉即可不用memcached-->
+	<cache type="org.mybatis.caches.memcached.MemcachedCache" />
+	<cache type="org.mybatis.caches.memcached.LoggingMemcachedCache" />
 	
   <resultMap id="BaseResultMap" type="cn.bishiti.base.model.TUser" >
     <id column="id" property="id" jdbcType="INTEGER" />
