@@ -16,6 +16,7 @@ import com.alibaba.fastjson.JSON;
 
 import cn.bishiti.base.commons.page.Page;
 import cn.bishiti.base.model.TUser;
+import cn.bishiti.base.service.RedisService;
 import cn.bishiti.base.service.TUserService;
 /**
  * 
@@ -29,7 +30,10 @@ import cn.bishiti.base.service.TUserService;
 @RequestMapping("/user")
 public class TUserController {
 	
-	 private static final Logger LOGGER = Logger.getLogger(TUserController.class);
+	private static final Logger LOGGER = Logger.getLogger(TUserController.class);
+	 
+	@Autowired
+	private RedisService redisService;
 	
 	@Autowired
 	private TUserService tUserService;
@@ -81,6 +85,16 @@ public class TUserController {
 		LOGGER.info(JSON.toJSON("删除用户:"+id));
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("status", "删除成功");
+		return map;
+	}
+	
+	@RequestMapping("/redis")
+	@ResponseBody
+	public Object redis(String key,String val){
+		Map<String,Object> map=new HashMap<String,Object>();
+		redisService.set(key, val);
+		map.put("status", "设置redis成功");
+		map.put(key, redisService.get(key));
 		return map;
 	}
 }
