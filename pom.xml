@@ -79,7 +79,7 @@
 		      <artifactId>mybatis-spring</artifactId>  
 		      <version>1.2.2</version> 
 	    </dependency> 
-	     <!-- mybatis memcached --> 
+	    <!-- mybatis memcached --> 
 	    <dependency>
 		    <groupId>org.mybatis.caches</groupId>
 		    <artifactId>mybatis-memcached</artifactId>
