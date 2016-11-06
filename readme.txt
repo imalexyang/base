@@ -12,5 +12,5 @@ readme
 4.http://localhost:8080/base/user/redis?key=abc&val=123  //添加redis功能测试
 5.imalex@163.com
 
-20161105
+20161106
 beijing
