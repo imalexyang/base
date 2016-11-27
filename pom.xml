@@ -187,6 +187,41 @@
 			<version>1.5.4</version>
 		</dependency>
 		
+		<!-- aop -->
+		<dependency>  
+            <groupId>org.aspectj</groupId>  
+            <artifactId>aspectjrt</artifactId>  
+            <version>1.6.11</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.aspectj</groupId>  
+            <artifactId>aspectjweaver</artifactId>  
+            <version>1.6.11</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>cglib</groupId>  
+            <artifactId>cglib</artifactId>  
+            <version>2.1</version>  
+        </dependency>  
+        
+        <!-- activemq -->
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-jms</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency> 
+        <dependency>  
+            <groupId>javax.annotation</groupId>  
+            <artifactId>jsr250-api</artifactId>  
+            <version>1.0</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.apache.activemq</groupId>  
+            <artifactId>activemq-core</artifactId>  
+            <version>5.7.0</version>  
+        </dependency>  
+        
 	</dependencies>  
 	<build> 
 		<finalName>base</finalName>  
