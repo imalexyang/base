@@ -7,7 +7,6 @@ public class Test {
 		System.out.println(get());
 	}
 	
-	@SuppressWarnings("finally")
 	public static int get(){
 		int i=9;
 		try{

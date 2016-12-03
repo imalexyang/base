@@ -14,8 +14,10 @@ public class SingletonTest{
 	
 	private static SingletonTest instance=null;
 	
+	@SuppressWarnings("rawtypes")
 	private Vector properties=null;
 	
+	@SuppressWarnings("rawtypes")
 	public Vector getProperties(){
 		return properties;
 	}

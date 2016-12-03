@@ -103,7 +103,8 @@ public class RedisServiceImpl implements RedisService{
 	     * @param pattern
 	     * @return
 	     */
-	    public Set<byte[]> Setkeys(String pattern) {
+	    @SuppressWarnings({ "unchecked", "rawtypes" })
+		public Set<byte[]> Setkeys(String pattern) {
 	        return (Set) redisTemplate.keys(pattern);
 
 	    }
