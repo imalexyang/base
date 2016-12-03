@@ -1,4 +1,4 @@
-package cn.bishiti.base.test;
+package cn.bishiti.base.test.jms;
  
 import java.util.Date;
 
