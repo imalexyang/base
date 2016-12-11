@@ -4,6 +4,7 @@ import java.util.concurrent.Exchanger;
 
 public class ExchangerExample {
 	
+	@SuppressWarnings("rawtypes")
 	public static void main(String args[]){
 		Exchanger exchanger=new Exchanger();
 		
