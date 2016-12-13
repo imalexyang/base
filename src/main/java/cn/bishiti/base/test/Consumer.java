@@ -14,7 +14,7 @@ public class Consumer implements Runnable{
 	public void run() {
 		synchronized (list) {
 			try{
-				while(true){
+				while(true){					
 					if(list.size()==0){
 						list.wait();
 					}
