@@ -23,6 +23,7 @@ public class ThreadPoolExecutorExample {
 						new LinkedBlockingQueue<Runnable>()
 						);
 		
+		//threadPoolExecutor.execute(command);
 	}
 
 }
