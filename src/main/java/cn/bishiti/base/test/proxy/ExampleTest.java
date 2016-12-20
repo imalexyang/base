@@ -11,7 +11,8 @@ public class ExampleTest {
 		IHelloWorld hw=new HelloWorld();
 		ExampleHandler handler=new ExampleHandler(hw);
 		
-		IHelloWorld helloWorld=(IHelloWorld)Proxy.newProxyInstance(hw.getClass().getClassLoader(), hw.getClass().getInterfaces(), handler);
+		IHelloWorld helloWorld=(IHelloWorld)Proxy.
+				newProxyInstance(hw.getClass().getClassLoader(), hw.getClass().getInterfaces(), handler);
 		helloWorld.example();
 		
 		
