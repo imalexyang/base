@@ -29,7 +29,6 @@ public class SocketClient {
 			
 			printWriter.close();
 			sysBuffer.close();
-			//bufferedReader.close();
 			socket.close();
 		}catch(Exception e){
 			e.printStackTrace();
