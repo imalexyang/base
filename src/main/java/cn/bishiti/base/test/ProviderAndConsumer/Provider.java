@@ -1,28 +1,29 @@
-package cn.bishiti.base.test;
+package cn.bishiti.base.test.ProviderAndConsumer;
 
 import java.util.List;
 
-public class Consumer implements Runnable{
+public class Provider implements Runnable{
 
 	private List<Integer> list=null;
 	
-	public Consumer(List<Integer> list){
+	public Provider(List<Integer> list){
 		this.list=list;
 	}
-			
+	
 	@Override
 	public void run() {
 		synchronized (list) {
 			try{
-				while(true){					
-					if(list.size()==0){
+				int i=0;
+				while(true){
+					if(list.size()==5){
 						list.wait();
 					}
-					System.out.println("获取"+list.get(0));
-					list.remove(0);
+					System.out.println("放入 "+ i);
+					list.add(i++);
 					list.notify();
 					Thread.sleep(1000);
-				}
+				}				
 			}catch(Exception e){
 				e.printStackTrace();
 			}

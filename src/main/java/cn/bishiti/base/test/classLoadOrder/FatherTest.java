@@ -1,4 +1,4 @@
-package cn.bishiti.base.test;
+package cn.bishiti.base.test.classLoadOrder;
 
 public class FatherTest {
     private String name;
