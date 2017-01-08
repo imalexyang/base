@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.ProviderAndConsumer;
+package cn.bishiti.base.test.providerAndConsumer;
 
 import java.util.ArrayList;
 import java.util.List;
