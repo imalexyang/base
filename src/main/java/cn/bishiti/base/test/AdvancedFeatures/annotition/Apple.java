@@ -10,7 +10,7 @@ public class Apple {
 	@FruitColor(fruitColor=Color.Red)
 	private String appleColor;
 	
-	@FruitProvider(id=1,name="红富士",address="苹果园")
+	@FruitProvider(id=1,name="红富士",address="北京苹果园")
 	private String appleProvider;
 
 	public String getAppleName() {
