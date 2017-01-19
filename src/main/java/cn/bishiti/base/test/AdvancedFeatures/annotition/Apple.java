@@ -9,6 +9,9 @@ public class Apple {
 	
 	@FruitColor(fruitColor=Color.Red)
 	private String appleColor;
+	
+	@FruitProvider(id=1,name="红富士",address="苹果园")
+	private String appleProvider;
 
 	public String getAppleName() {
 		return appleName;
@@ -24,8 +27,16 @@ public class Apple {
 
 	public void setAppleColor(String appleColor) {
 		this.appleColor = appleColor;
-	}
+	}	
 	
+	public String getAppleProvider() {
+		return appleProvider;
+	}
+
+	public void setAppleProvider(String appleProvider) {
+		this.appleProvider = appleProvider;
+	}
+
 	public void displayName(){
 		System.out.println("水果的名字是：苹果");
 	}
