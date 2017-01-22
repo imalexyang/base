@@ -2,7 +2,13 @@ package cn.bishiti.base.test.AdvancedFeatures.variableparameter;
 
 public class SumUtil {
 	
+	public static int variableSun(int i,int j){
+		System.out.println("fixd parameter");
+		return i+j;	
+	}
+	
 	public static int variableSun(int ... values){
+		System.out.println("variable parameter");
 		int total=0;
 		for(int value:values){
 			total+=value;
