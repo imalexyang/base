@@ -18,6 +18,7 @@ public class Sheep implements Cloneable,Serializable{
 		return super.clone();
 	}
 	
+	@SuppressWarnings("resource")
 	public Object deepClone() throws IOException, ClassNotFoundException{
 		ByteArrayOutputStream bo=new ByteArrayOutputStream();
 		ObjectOutputStream oo=new ObjectOutputStream(bo);
