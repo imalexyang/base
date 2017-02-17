@@ -5,6 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicNumberExample {
 
+	@SuppressWarnings({ "unused", "null" })
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		AtomicBoolean atomicBoolean=new AtomicBoolean();
