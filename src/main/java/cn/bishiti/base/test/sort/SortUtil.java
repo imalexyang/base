@@ -5,25 +5,27 @@ public class SortUtil {
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub 
-
+		int[] array={4,5,3,7,8,1,9,2,6};
+		bubbleSort(array);
 	}
 	
-	public static int[] bubbleSort(int[] array){
+	public static void bubbleSort(int[] array){
 		for(int i=0;i<array.length-1;i++){
 			for(int j=0;j<array.length-i-1;j++){
 				if(array[j]>array[j+1]){
-					int temp=array[j+1];
-					array[j+1]=array[j];
-					array[j]=temp;
+					int temp=array[j];
+					array[j]=array[j+1];
+					array[j+1]=temp;
 				}
 			}
 		}
-		return array;
-	}
-
-	
-	public static int[] selectionSort(int[] array){
 		for(int i=0;i<array.length;i++){
+			System.out.print(array[i]);
+		}
+	}
+	
+	public static void selectionSort(int[] array){
+		for(int i=0;i<array.length-1;i++){
 			int min=i;
 			for(int j=i+1;j<array.length;j++){
 				if(array[j]<array[min]){
@@ -34,18 +36,26 @@ public class SortUtil {
 			array[min]=array[i];
 			array[i]=temp;
 		}
-		return array;
+		for(int i=0;i<array.length;i++){
+			System.out.print(array[i]);
+		}
 	}
 	
-	public static int[] insertionSort(int[] array){
-		for(int i=0;i<array.length-1;i++){
-			for(int j=1;j>0&&array[j]<array[j-1];j--){
-				int temp=array[i];
-				array[j]=array[j-1];
-				array[j-1]=temp;
+	public static void insertionSort(int[] array){
+		for(int i=1;i<array.length;i++){
+			int temp=array[i];
+			int index=i;
+			for(int j=i-1;j>=0;j--){
+				if(array[j]>temp){
+					array[j+1]=array[j];
+					index=j;
+				}
 			}
+			array[index]=temp;
 		}
-		return array;
+		for(int i=0;i<array.length;i++){
+			System.out.print(array[i]);
+		}
 	}
 }
 
