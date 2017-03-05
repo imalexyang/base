@@ -1,6 +1,6 @@
 package cn.bishiti.base.test.DesignPattern.proxy;
 
-public interface Souceable {
+public interface Sourceable {
 
 	public void method();
 	
