@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.DesignPattern; 
+package cn.bishiti.base.test.DesignPattern.singleton; 
 
 public class Singleton2 {
 
