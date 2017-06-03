@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.lambda;
+/*package cn.bishiti.base.test.lambda;
 
 public class Test2 {
 
@@ -37,3 +37,4 @@ interface Lambda2{
 interface Lambda3{
 	int method(int i,int j);
 }
+*/

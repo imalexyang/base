@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.lambda;
+/*package cn.bishiti.base.test.lambda;
 
 //http://www.open-open.com/lib/view/open1397471445653.html
 public class Main {
@@ -53,4 +53,4 @@ interface ParamLambda {
 
 interface MultiParamLambda {
 	void doSomething(String param1, String param2);
-}
+}*/

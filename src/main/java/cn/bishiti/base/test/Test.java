@@ -1,7 +1,20 @@
 package cn.bishiti.base.test;
 
-public class Test {
+import org.apache.log4j.Logger;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import cn.bishiti.base.service.TUserService;
 
+@RunWith(Junit4ClassRunner.class)
+@ContextConfiguration(locations={"classpath:spring/spring.xml"})
+public class Test {
+	
+	@Autowired
+	private TUserService tUserService;
+	
+	private Logger logger = Logger.getLogger(Test.class);
+	
 	public static void main(String[] args) throws InterruptedException {		
 		Throwable ex = new Throwable();
         StackTraceElement[] stackElements = ex.getStackTrace();
@@ -17,5 +30,11 @@ public class Test {
         
         Exception e = new Exception("this is a log");
         e.printStackTrace();
+	}
+	
+	@org.junit.Test
+	public void TestApp(){
+		logger.info("just log4j:"+tUserService);
+		System.out.println("println:"+tUserService);
 	}
 }

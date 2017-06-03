@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.lambda; 
+/*package cn.bishiti.base.test.lambda; 
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,4 +26,4 @@ public class Test1 {
 	}
 }
 
-  
+  */
