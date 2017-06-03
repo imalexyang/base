@@ -36,5 +36,6 @@ public class Test {
 	public void TestApp(){
 		logger.info("just log4j:"+tUserService);
 		System.out.println("println:"+tUserService);
+		//http://blog.csdn.net/wangpeng047/article/details/20375413
 	}
 }
