@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.DesignPattern.Composite;
+package cn.bishiti.base.test.DesignPattern.composite;
 
 public class Tree {
 

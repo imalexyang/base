@@ -1,4 +1,4 @@
-package cn.bishiti.base.test.DesignPattern.Composite;
+package cn.bishiti.base.test.DesignPattern.composite;
 
 import java.util.Enumeration;
 import java.util.Vector;
