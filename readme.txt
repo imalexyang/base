@@ -11,6 +11,7 @@ readme
 3.请求地址：http://localhost:8080/base/admin/index
 4.http://localhost:8080/base/user/redis?key=abc&val=123  //添加redis功能测试
 5.imalex@163.com
+6.test package just is test.
 
 20161127
 beijing
